@@ -44,7 +44,7 @@
 mod canonical_request;
 mod error;
 mod settings;
-pub mod sign;
+mod sign;
 mod uri_path_normalization;
 mod url_escape;
 
@@ -56,4 +56,4 @@ pub use settings::{
     PayloadChecksumKind, PercentEncodingMode, SessionTokenMode, SignatureLocation, SigningParams,
     SigningSettings, UriPathNormalizationMode,
 };
-pub use sign::{sign, SignableBody, SignableRequest};
+pub use sign::{sign, SignableBody, SignableRequest, SigningInstructions};
